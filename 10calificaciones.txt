@@ -1,0 +1,28 @@
+#include <stdio.h>
+#include <conio.h>
+#include <windows.h>
+int main() {
+	int c,i,j,a[10]={15,84,67,49,65,12,48,98,19,23};
+	for(i=0;i<=8;i++){
+	printf("El arreglos es",a);}
+	//for(int i=0;i<=9;i++)//solo entran 10 datos
+		//scanf("%d ",&a[i]);//se capturan los numeros
+	//system("cls");
+	
+	for(j=0;j<=8;j++){//se inician los ordenamientos
+		for(i=0;i<=8;i++){
+			if(a[i]>a[i+1]){
+				c=a[i];
+				a[i]=a[i+1];
+				a[i+1]=c;
+			}
+		}
+		
+	}
+	printf("\nCalificaciones de menor a mayor\n");//hasta que cumple el ciclo de 10 se imprimen los datos ordenados
+	for(i=0; i<=8; i++){
+		printf("%d ",a[i]);
+	}
+	
+return 0;
+}
